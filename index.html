@@ -203,6 +203,7 @@ body { background: var(--bg); color: var(--body); font-family: 'Barlow', sans-se
   .wrap, .tiers-section, .results-section, .youtube-section, .free-section, .testimonials-section, .footer { padding-left: 24px; padding-right: 24px; }
 }
 </style>
+<script async data-uid="f80e7975a2" src="https://coach-mayers-performance.kit.com/f80e7975a2/index.js"></script>
 </head>
 <body>
 
@@ -416,7 +417,11 @@ body { background: var(--bg); color: var(--body); font-family: 'Barlow', sans-se
     <p style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;">Free Download</p>
     <h2 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(32px,5vw,48px);font-weight:900;text-transform:uppercase;color:var(--black);line-height:0.94;margin-bottom:16px;">Get my free<br>Arm Care Routine.</h2>
     <p style="font-size:15px;font-weight:300;color:var(--muted);line-height:1.8;margin-bottom:36px;">Built for baseball and softball athletes. The same daily arm care protocol used with athletes at every level — from high school to professional. Download it free instantly.</p>
-    <a href="https://coachmayers.com/arm-care-guide.pdf" target="_blank" style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:18px 48px;background:var(--accent);color:#fff;text-decoration:none;transition:background 0.2s;">Download Free PDF</a>
+    <a href="https://coachmayers.com/arm-care-guide.pdf" target="_blank" style="display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:18px 48px;background:var(--accent);color:#fff;text-decoration:none;transition:background 0.2s;margin-bottom:24px;">Download Free PDF</a>
+    <p style="font-size:13px;color:var(--muted);margin:20px 0 16px;">Or enter your email and I'll send it to you:</p>
+    <div style="max-width:480px;margin:0 auto;">
+      <script async data-uid="f80e7975a2" src="https://coach-mayers-performance.kit.com/f80e7975a2/index.js"></script>
+    </div>
   </div>
 </div>
 
@@ -593,17 +598,19 @@ body { background: var(--bg); color: var(--body); font-family: 'Barlow', sans-se
 </div>
 
 
-<div id="kit-popup" style="display:none;position:fixed;bottom:24px;right:24px;z-index:9999;max-width:320px;background:#fff;border:1px solid rgba(0,0,0,0.09);box-shadow:0 8px 32px rgba(0,0,0,0.12);padding:32px 28px;">
-  <button onclick="document.getElementById('kit-popup').style.display='none'" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#6b6560;line-height:1;">×</button>
-  <p style="font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#b8391a;margin-bottom:10px;">Free Download</p>
-  <p style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;text-transform:uppercase;color:#0c0c0c;line-height:1.05;margin-bottom:10px;">Free Arm Care Routine</p>
-  <p style="font-size:13px;font-weight:300;color:#6b6560;line-height:1.7;margin-bottom:24px;">The same arm care protocol used with athletes from high school to the pros. Download it free.</p>
-  <a href="https://coachmayers.com/arm-care-guide.pdf" target="_blank" style="display:block;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;padding:14px 20px;background:#b8391a;color:#fff;text-decoration:none;">Download Free PDF</a>
+<div id="kit-popup" style="display:none;position:fixed;bottom:20px;right:20px;z-index:9999;width:280px;background:#fff;border:1px solid rgba(0,0,0,0.1);box-shadow:0 4px 20px rgba(0,0,0,0.1);padding:20px 20px 16px;">
+  <button onclick="document.getElementById('kit-popup').style.display='none';localStorage.setItem('popupClosed','1');" style="position:absolute;top:8px;right:10px;background:none;border:none;font-size:16px;cursor:pointer;color:#999;line-height:1;padding:4px 6px;">×</button>
+  <p style="font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#b8391a;margin-bottom:6px;">Free Download</p>
+  <p style="font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:900;text-transform:uppercase;color:#0c0c0c;line-height:1.05;margin-bottom:6px;">Free Arm Care Routine</p>
+  <p style="font-size:12px;font-weight:300;color:#6b6560;line-height:1.6;margin-bottom:14px;">For baseball & softball athletes. Download free or get it emailed to you.</p>
+  <a href="https://coachmayers.com/arm-care-guide.pdf" target="_blank" style="display:block;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:10px;background:#b8391a;color:#fff;text-decoration:none;margin-bottom:8px;">Download Free PDF</a>
+  <div style="font-size:11px;text-align:center;color:#999;margin-bottom:8px;">or get it emailed to you</div>
+  <script async data-uid="f80e7975a2" src="https://coach-mayers-performance.kit.com/f80e7975a2/index.js"></script>
 </div>
 <script>
   var popupShown = false;
   window.addEventListener('scroll', function() {
-    if (!popupShown && window.scrollY > 600) {
+    if (!popupShown && window.scrollY > 800 && !localStorage.getItem('popupClosed')) {
       document.getElementById('kit-popup').style.display = 'block';
       popupShown = true;
     }
