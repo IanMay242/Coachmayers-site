@@ -519,6 +519,13 @@ body { background: var(--bg); color: var(--body); font-family: 'Barlow', sans-se
         <span class="testi-result">Agent Endorsement</span>
       </div>
 
+
+      <div class="testi-card">
+        <p class="testi-quote">Ian tailors workouts specifically to my needs as a softball pitcher, focusing on strength, mobility, and movements that directly translate to my performance on the field. It's not just general training — it's personalized in a way that actually makes a difference. What really stands out is his attention to form and technique, making sure you're not just working hard, but working smart and safely.</p>
+        <div class="testi-name">Dani Brunner</div>
+        <div class="testi-role">Softball Pitcher · MaxOut 360</div>
+        <span class="testi-result">Sport-Specific Pitching Development</span>
+      </div>
     </div>
   </div>
 </div>
@@ -598,24 +605,7 @@ body { background: var(--bg); color: var(--body); font-family: 'Barlow', sans-se
 </div>
 
 
-<div id="kit-popup" style="display:none;position:fixed;bottom:20px;right:20px;z-index:9999;width:280px;background:#fff;border:1px solid rgba(0,0,0,0.1);box-shadow:0 4px 20px rgba(0,0,0,0.1);padding:20px 20px 16px;">
-  <button onclick="document.getElementById('kit-popup').style.display='none';localStorage.setItem('popupClosed','1');" style="position:absolute;top:8px;right:10px;background:none;border:none;font-size:16px;cursor:pointer;color:#999;line-height:1;padding:4px 6px;">×</button>
-  <p style="font-family:'Barlow Condensed',sans-serif;font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#b8391a;margin-bottom:6px;">Free Download</p>
-  <p style="font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:900;text-transform:uppercase;color:#0c0c0c;line-height:1.05;margin-bottom:6px;">Free Arm Care Routine</p>
-  <p style="font-size:12px;font-weight:300;color:#6b6560;line-height:1.6;margin-bottom:14px;">For baseball & softball athletes. Download free or get it emailed to you.</p>
-  <a href="https://coachmayers.com/arm-care-guide.pdf" target="_blank" style="display:block;text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:10px;background:#b8391a;color:#fff;text-decoration:none;margin-bottom:8px;">Download Free PDF</a>
-  <div style="font-size:11px;text-align:center;color:#999;margin-bottom:8px;">or get it emailed to you</div>
-  <script async data-uid="f80e7975a2" src="https://coach-mayers-performance.kit.com/f80e7975a2/index.js"></script>
-</div>
-<script>
-  var popupShown = false;
-  window.addEventListener('scroll', function() {
-    if (!popupShown && window.scrollY > 800 && !localStorage.getItem('popupClosed')) {
-      document.getElementById('kit-popup').style.display = 'block';
-      popupShown = true;
-    }
-  });
-</script>
+
 
 </body>
 </html>
